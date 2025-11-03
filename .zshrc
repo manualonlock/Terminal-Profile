@@ -1,0 +1,5 @@
+
+export SCRIPTS_DIR="$HOME/.scripts"
+export TERMINAL_PROFILE_CONFIG_NAME="profile.sh"
+
+source $SCRIPTS_DIR/$TERMINAL_PROFILE_CONFIG_NAME
