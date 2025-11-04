@@ -50,6 +50,16 @@ else
     echo "Created $POSH_DIR directory."
 fi
 
+export SCRIPTS_DIR="$HOME/.scripts"
+
+if [ ! -d "$SCRIPTS_DIR" ]; then
+    mkdir "$SCRIPTS_DIR"
+    echo "Created $SCRIPTS_DIR directory."
+fi
+
+export TERMINAL_PROFILE_CONFIG_NAME="profile.sh"
+cp $TERMINAL_PROFILE_CONFIG_NAME $SCRIPTS_DIR/$TERMINAL_PROFILE_CONFIG_NAME
+
 POSH_CONFIG_FILE_NAME="posh.json"
 cp posh_config.json $POSH_DIR/$POSH_CONFIG_FILE_NAME
 
