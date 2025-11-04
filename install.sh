@@ -14,7 +14,8 @@ brew install font-hack-nerd-font \
     lsd \
     fzf \
     neofetch \
-    bat
+    bat \
+    virtualenv
 
 # ----- END BREW INSTALLATION -----
 
@@ -53,3 +54,7 @@ POSH_CONFIG_FILE_NAME="posh.json"
 cp posh_config.json $POSH_DIR/$POSH_CONFIG_FILE_NAME
 
 # ----- END POSH CONFIG FILE COPY -----
+
+
+# Install macOS applications
+./install_macos_applications.sh
